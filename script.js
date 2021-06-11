@@ -13,7 +13,6 @@ let apiQuotes = [];
 function showNewQuote() {
     // Pick a random Quotes from apiQuotes Array
     showLoading();
-    return;
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     authorText.textContent = quote.author === null ? 'Unknow' : quote.author;
 
